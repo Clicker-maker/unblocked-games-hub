@@ -20,7 +20,7 @@
                     <div class="game-image-wrapper">
                         <img src="assets/fnaf1.jpg" alt="FNAF 1" class="game-image">
                         <div class="image-overlay">
-                            <button class="fullscreen-btn" title="Open Fullscreen">⛶</button>
+                            <button class="fullscreen-btn" data-game="1" title="Play Fullscreen">▶ PLAY</button>
                         </div>
                     </div>
                     <h3>Five Nights at Freddy's 1</h3>
@@ -35,7 +35,7 @@
                     <div class="game-image-wrapper">
                         <img src="assets/fnaf2.jpg" alt="FNAF 2" class="game-image">
                         <div class="image-overlay">
-                            <button class="fullscreen-btn" title="Open Fullscreen">⛶</button>
+                            <button class="fullscreen-btn" data-game="2" title="Play Fullscreen">▶ PLAY</button>
                         </div>
                     </div>
                     <h3>Five Nights at Freddy's 2</h3>
@@ -50,7 +50,7 @@
                     <div class="game-image-wrapper">
                         <img src="assets/fnaf3.jpg" alt="FNAF 3" class="game-image">
                         <div class="image-overlay">
-                            <button class="fullscreen-btn" title="Open Fullscreen">⛶</button>
+                            <button class="fullscreen-btn" data-game="3" title="Play Fullscreen">▶ PLAY</button>
                         </div>
                     </div>
                     <h3>Five Nights at Freddy's 3</h3>
@@ -65,7 +65,7 @@
                     <div class="game-image-wrapper">
                         <img src="assets/fnaf4.jpg" alt="FNAF 4" class="game-image">
                         <div class="image-overlay">
-                            <button class="fullscreen-btn" title="Open Fullscreen">⛶</button>
+                            <button class="fullscreen-btn" data-game="4" title="Play Fullscreen">▶ PLAY</button>
                         </div>
                     </div>
                     <h3>Five Nights at Freddy's 4</h3>
@@ -80,7 +80,7 @@
                     <div class="game-image-wrapper">
                         <img src="assets/fnaf5.jpg" alt="FNAF 5" class="game-image">
                         <div class="image-overlay">
-                            <button class="fullscreen-btn" title="Open Fullscreen">⛶</button>
+                            <button class="fullscreen-btn" data-game="5" title="Play Fullscreen">▶ PLAY</button>
                         </div>
                     </div>
                     <h3>Five Nights at Freddy's 5</h3>
@@ -95,7 +95,7 @@
                     <div class="game-image-wrapper">
                         <img src="assets/fnae.jpg" alt="FNAE" class="game-image">
                         <div class="image-overlay">
-                            <button class="fullscreen-btn" title="Open Fullscreen">⛶</button>
+                            <button class="fullscreen-btn" data-game="epstein" title="Play Fullscreen">▶ PLAY</button>
                         </div>
                     </div>
                     <h3>Five Nights at Epstein's</h3>
@@ -112,11 +112,11 @@
         </footer>
     </div>
 
-    <!-- Fullscreen Modal -->
-    <div id="fullscreenModal" class="fullscreen-modal">
-        <div class="fullscreen-content">
-            <img id="fullscreenImage" src="" alt="Fullscreen Image">
-            <button id="closeFullscreen" class="close-btn">&times;</button>
+    <!-- Fullscreen Game Modal -->
+    <div id="gameModal" class="game-modal">
+        <div class="game-modal-content">
+            <button id="closeGame" class="close-game-btn">&times;</button>
+            <iframe id="gameFrame" src="" allow="fullscreen" allowfullscreen></iframe>
         </div>
     </div>
 
